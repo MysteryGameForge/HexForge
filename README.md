@@ -4,9 +4,9 @@
   <img src="./brand/logo.png" alt="hex-forge logo" width="140px" height="140px" />
   <br>
   <em>
-    HexForge is a 3D engine for building desktop games
+    HexForge is a 3D engine
     <br>
-    using Sandbox application.
+    for building desktop games using Editor application
   </em>
 </p>
 
