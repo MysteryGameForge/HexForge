@@ -12,6 +12,46 @@
 
 <hr>
 
-# Lisense
+## Development Setup
+
+### Prerequisites
+
+- Install [git][git] - includes for cloning a project
+- Install [llvm][llvm] - includes to compile a project
+
+### Setting Up a Project
+
+1. Clone a project and move to the project directory
+
+```powershell
+git clone https://github.com/MysteryGameForge/HexForge
+cd HexForge
+```
+
+2. Compile a project
+
+```powershell
+# With terminal
+scripts\build [debug/release]
+
+# With VSCode
+code .
+[ctrl+shift+B]
+```
+
+3. Run a project
+
+```powershell
+# With terminal
+build\HexForge.exe
+
+# With VSCode
+[F5]
+```
+
+## Lisense
 
 [Apache License 2.0](./LICENSE)
+
+[git]: https://git-scm.com/downloads
+[llvm]: https://releases.llvm.org/

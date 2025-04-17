@@ -35,6 +35,6 @@ if not exist build mkdir build
 
 :: Build Program
 pushd build
-%compile% %source_files% %compile_link% %out%editor.exe || exit /b 1
+%compile% %source_files% %compile_link% %out%HexForge.exe || exit /b 1
 popd
 echo [build success]
