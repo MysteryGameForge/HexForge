@@ -6,7 +6,8 @@
       "type": "cppvsdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/editor.exe",
-      "cwd": "${workspaceFolder}/build/"
+      "cwd": "${workspaceFolder}/build/",
+      "stopAtEntry": false
     }
   ]
 }

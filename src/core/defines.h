@@ -2,6 +2,4 @@
 
 #include <stdio.h>
 
-void func() {
-  printf("%s\n", "Hello, World!");
-}
+void func();

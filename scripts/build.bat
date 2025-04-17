@@ -1,11 +1,18 @@
 @ECHO OFF
+setlocal enabledelayedexpansion
 pushd %~dp0..
+
+:: Get All Source Files
+pushd src
+set source_files=
+for /r %%f in (*.c) do set source_files=!source_files! %%f
+popd
+
+:: Choose clang As Compiler
+set clang=1
 
 :: Unpack Build Arguments
 for %%a in (%*) do set "%%a=1"
-
-set clang=1
-
 if "%debug%"=="1"   set release=0 && echo [debug mode]
 if "%release%"=="1" set debug=0 && echo [release mode]
 if "%clang%"=="1" echo [clang compile]
@@ -28,6 +35,6 @@ if not exist build mkdir build
 
 :: Build Program
 pushd build
-%compile% ../src/editor/editor_main.c %compile_link% %out%editor.exe || exit /b 1
+%compile% %source_files% %compile_link% %out%editor.exe || exit /b 1
 popd
 echo [build success]
