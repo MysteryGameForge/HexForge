@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build (Debug)",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/build.bat",
+      "args": [
+        "debug"
+      ],
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Build (Release)",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/build.bat",
+      "args": [
+        "release"
+      ],
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}

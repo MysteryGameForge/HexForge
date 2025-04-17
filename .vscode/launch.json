@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(Win32) Launch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/editor.exe",
+      "cwd": "${workspaceFolder}/build/"
+    }
+  ]
+}

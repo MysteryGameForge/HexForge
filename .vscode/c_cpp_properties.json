@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "compilerPath": "C:\\Program Files\\LLVM\\bin\\clang.exe",
+      "windowsSdkVersion": "10.0.22621.0",
+      "intelliSenseMode": "clang-x64",
+      "cppStandard": "c++17",
+      "cStandard": "c17",
+      "includePath": [
+        "${workspaceFolder}/src/**"
+      ],
+      "defines": [
+        "UNICODE"
+      ]
+    }
+  ],
+  "version": 4
+}
